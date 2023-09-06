@@ -14,3 +14,11 @@ circle {
 	stroke-width: 10%;
 	fill: none;
 }
+@font-face {
+	font-family: fontCode;
+	src: url(../public/CascadiaCodePL.ttf);
+}
+
+.font-code {
+	font-family: fontCode;
+}

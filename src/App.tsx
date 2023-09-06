@@ -2,8 +2,12 @@ import { Button, Link } from "@nextui-org/react"
 import Board from "./components/Board"
 import Footer from "./components/Footer"
 import Github from "./components/icons/Github"
+import font from "../public/CascadiaCodePL.ttf"
 
 export const App = () => {
+
+  console.log(font)
+
   return (
     <main className="w-full h-screen flex items-center justify-center mx-auto container  flex-col">
       <Board />
