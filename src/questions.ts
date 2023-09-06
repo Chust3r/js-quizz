@@ -42,14 +42,14 @@ const questions: Question[] = [
 		answerID: 1,
 	},
 	{
-		question: 'Do you know what will be the output of this code?',
+		question: 'What	will be the output of the code below?',
 		code: `const isTrue = true == []
 const isFalse = true == ![];
 console.log(isTrue + isFalse)`,
 		answers: [
 			{ id: 1, value: '1' },
 			{ id: 2, value: '0' },
-			{ id: 3, value: '"true"' },
+			{ id: 3, value: 'false' },
 			{ id: 4, value: 'true' },
 		],
 		answerID: 2,
@@ -75,12 +75,12 @@ console.log(name)`,
 			{ id: 1, value: 'null' },
 			{ id: 2, value: 'undefined' },
 			{ id: 3, value: 'Jhon' },
-			{ id: 4, value: '"\t"' },
+			{ id: 4, value: '' },
 		],
 		answerID: 2,
 	},
 	{
-		question: 'Do you know what will be the output of this code?',
+		question: 'Can you guess the result?',
 		code: `(function() {
 console.log(1)
 setTimeout(function(){console.log(2)}, 1000)
@@ -118,9 +118,7 @@ console.log(4);
 	},
 	{
 		question: 'Do you know what will be the output of this code?',
-		code: `if(!""){
-console.log("Hello world!")
-}`,
+		code: `console.log([]==![])`,
 		answers: [
 			{
 				id: 1,
@@ -129,6 +127,35 @@ console.log("Hello world!")
 			{ id: 2, value: 'false' },
 		],
 		answerID: 1,
+	},
+	{
+		question: 'Can you guess the result?',
+		code: `const arr1 = [1,2]
+const arr2=[3,4]
+console.log(arr1+arr2)`,
+		answers: [
+			{
+				id: 1,
+				value: '[1,2,3,4]',
+			},
+			{ id: 2, value: '[1,23,4]' },
+			{ id: 3, value: '1,2,3,4' },
+			{ id: 4, value: '1,23,4' },
+		],
+		answerID: 4,
+	},
+	{
+		question: 'Do you know what will be the output of this code?',
+		code: `const arr = [10,1,3]
+console.log(arr.sort())`,
+		answers: [
+			{
+				id: 1,
+				value: '[1,3,10]',
+			},
+			{ id: 2, value: '[1,10,3]' },
+		],
+		answerID: 2,
 	},
 ]
 
