@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	opacity: 0.8;
+	background-image: linear-gradient(#7070702c 1px, transparent 1px),
+		linear-gradient(to right, #7070702c 1px, transparent 1px);
+	background-size: 30px 30px;
+}
+
+circle {
+	stroke-dashoffset: 0;
+	stroke-width: 10%;
+	fill: none;
+}
